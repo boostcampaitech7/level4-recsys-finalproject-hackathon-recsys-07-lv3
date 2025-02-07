@@ -1,0 +1,7 @@
+numpy <= 1.26
+pandas
+scipy
+scikit-learn
+tqdm
+torch
+bottleneck
