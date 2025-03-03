@@ -63,7 +63,7 @@
 
 
 ## 개발환경 
-- python 3.9.13
+- python 3.10.15
 
  ## 기술스택
 <img src = 'https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54'> <img src = 'https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white'> <img src= 'https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white'> <img src ='https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white'> 
@@ -79,16 +79,7 @@ $ pip install -r requirement.txt
 ## 기능 및 예시
 - Cold Embedding Retraining
 
-먼저 Warm User의 성능이 최고 성능을 달성할 떄까지 LightGCN을 학습 후 모델을 저장합니다. 경로를 cold_emb_retrain으로 설정한 뒤 아래 명령어를 실행합니다.
-```shell
-$ python main.py 
-```
-
-이후 다음의 명령어를 실행하면 저장된 모델을 불러 와 콜드 유저의 임베딩을 초기화 한 뒤 재학습을 진행합니다. 
-
-```shell
-$ python main.py --retrain
-```
+cold_emb_retrain 폴더로 이동하면 자세한 안내사항을 확인하실 수 있습니다.
 
 <br/>
 
