@@ -8,7 +8,7 @@
 |<a href = 'https://github.com/jkwag'><img src = 'https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white'> </a>|<a href = 'https://github.com/joshua5301'><img src = 'https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white'> </a>|<a href = 'https://github.com/spsp4755'><img src = 'https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white'> </a>|<a href = 'https://github.com/hwbae42'><img src = 'https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white'> </a>|<a href = 'https://github.com/Human3321'><img src = 'https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white'> </a>|<a href = 'https://github.com/Jun9096'><img src = 'https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white'> </a>|
 
 ## 프로젝트 구조
-'''
+```
 📦 level4-recsys-finalproject-hackathon-recsys-07-lv3
 ├── 📜 README.md
 ├── 📂 cold_emb_retrain
@@ -59,7 +59,7 @@
         └── 📂 utils
             ├── 📜 __init__.py
             └── 📜 setting.py
-'''
+```
 
 
 ## 개발환경 
@@ -78,16 +78,22 @@ $ pip install -r requirement.txt
 
 ## 기능 및 예시
 - Cold Embedding Retraining
+
 먼저 Warm User의 성능이 최고 성능을 달성할 떄까지 LightGCN을 학습 후 모델을 저장합니다. 경로를 cold_emb_retrain으로 설정한 뒤 아래 명령어를 실행합니다.
 ```shell
 $ python main.py 
 ```
+
 이후 다음의 명령어를 실행하면 저장된 모델을 불러 와 콜드 유저의 임베딩을 초기화 한 뒤 재학습을 진행합니다. 
+
 ```shell
 $ python main.py --retrain
 ```
+
 <br/>
+
 - Hybrid Negative Sampling
+
 먼저 Uniform Random Negative Sampling 을 통해 모델이 Cold User의 성능이 최고 성능을 달성할 때까지 학습합니다. 이후 저장된 모델을 불러와 상위 30% 인기도 영화를 샘플링하는
 Popularity 기반 Hard Negative Sampling을 통해 모델을 추가적으로 학습합니다. 경로를 neg_sampling_finetune으로 설정한 뒤 다음의 명령어를 실행하면 됩니다.
 
